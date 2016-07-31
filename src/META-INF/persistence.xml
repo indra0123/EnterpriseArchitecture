@@ -3,6 +3,23 @@
   <persistence-unit name="CS544_ASSIGNMENT2" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>ea.cs544.indra.assignment2.Car</class>
+    <class>ea.cs544.indra.assignment4.entity.Person</class>
+    <class>ea.cs544.indra.assignment4.entity.Teacher</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/ea_cs544?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+      <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+    </properties>
+  </persistence-unit>
+  <persistence-unit name="SC544_ASSIGNMENT4" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>ea.cs544.indra.assignment4.entity.Student</class>
+    <class>ea.cs544.indra.assignment4.entity.Person</class>
+    <class>ea.cs544.indra.assignment4.entity.Teacher</class>
+    <class>ea.cs544.indra.assignment4.entity.Laptop</class>
+    <class>ea.cs544.indra.assignment4.entity.NoteBooks</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/ea_cs544?zeroDateTimeBehavior=convertToNull"/>
       <property name="javax.persistence.jdbc.user" value="root"/>
